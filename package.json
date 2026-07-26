@@ -9,7 +9,7 @@
     "build:nofetch": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "node --test scripts/*.test.mjs"
+    "test": "node --experimental-strip-types --test scripts/*.test.mjs lib/*.test.mjs"
   },
   "dependencies": {
     "fuse.js": "^7.5.0",

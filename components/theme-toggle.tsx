@@ -15,6 +15,10 @@ export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
+  // Client-only mount flag, the documented next-themes hydration guard --
+  // there is no external system to synchronize with here, only a one-time
+  // "hydration happened" signal, so a post-mount setState is intentional.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setMounted(true), []);
 
   // Pre-mount: render a same-sized, disabled placeholder instead of null,

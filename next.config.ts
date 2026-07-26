@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   basePath: "/dohsites",
   assetPrefix: "/dohsites",
   trailingSlash: true,
-  images: { unoptimized: true },
+  images: {
+    unoptimized: true,
+    remotePatterns: [{ hostname: "avatars.githubusercontent.com" }],
+  },
 };
 
 export default nextConfig;
