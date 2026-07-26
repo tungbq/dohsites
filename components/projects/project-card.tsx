@@ -13,6 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
             className="hover:text-accent"
           >
             {project.title}
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
         </h3>
         <Badge>{project.category}</Badge>
@@ -31,8 +32,14 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="mt-auto flex items-center gap-4 border-t border-border pt-3 text-xs text-muted">
-        <span>⭐ {project.stats.stars}</span>
-        <span>🍴 {project.stats.forks}</span>
+        <span>
+          <span aria-hidden="true">⭐</span> {project.stats.stars}
+          <span className="sr-only"> stars</span>
+        </span>
+        <span>
+          <span aria-hidden="true">🍴</span> {project.stats.forks}
+          <span className="sr-only"> forks</span>
+        </span>
         {project.stats.language ? <span>{project.stats.language}</span> : null}
       </div>
     </article>

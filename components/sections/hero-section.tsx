@@ -7,7 +7,7 @@ export function HeroSection({ stats }: { stats: ProfileStats }) {
   return (
     <section className="mx-auto flex max-w-5xl flex-col gap-8 px-6 py-16 sm:flex-row sm:items-center">
       <Image
-        src={stats.avatarUrl}
+        src={`${stats.avatarUrl}&s=256`}
         alt={`${siteConfig.author} avatar`}
         width={128}
         height={128}
@@ -30,6 +30,7 @@ export function HeroSection({ stats }: { stats: ProfileStats }) {
             className="rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface"
           >
             GitHub
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
           <a
             href="#projects"

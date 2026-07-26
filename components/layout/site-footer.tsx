@@ -25,6 +25,7 @@ export function SiteFooter() {
               className="transition-colors hover:text-foreground"
             >
               {link.label}
+              <span className="sr-only"> (opens in new tab)</span>
             </a>
           ))}
         </nav>
