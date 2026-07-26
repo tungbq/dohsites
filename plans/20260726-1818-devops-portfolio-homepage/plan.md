@@ -1,7 +1,7 @@
 ---
 title: "DevOps Portfolio Homepage (tungbq/dohsites)"
 description: "Next.js 15 static-export portfolio for GitHub user tungbq, deployed to GitHub Pages with build-time GitHub data and daily refresh."
-status: pending
+status: in_progress
 priority: P2
 effort: 13h
 branch: main
@@ -31,7 +31,7 @@ Static portfolio at `https://tungbq.github.io/dohsites`. Next.js 15 App Router, 
 
 | # | Phase | Depends on | Effort | Status |
 |---|---|---|---|---|
-| 01 | [Project scaffold & static export config](phase-01-project-scaffold-and-static-export-config.md) | — | 2h | pending |
+| 01 | [Project scaffold & static export config](phase-01-project-scaffold-and-static-export-config.md) | — | 2h | done |
 | 02 | [GitHub Pages deployment pipeline](phase-02-github-pages-deployment-pipeline.md) | 01 | 1.5h | pending |
 | 03 | [GitHub data pipeline & daily refresh](phase-03-github-data-pipeline-and-daily-refresh.md) | 01, 02 | 2.5h | pending |
 | 04 | [Core layout, SEO, metadata, dark mode](phase-04-core-layout-seo-metadata-dark-mode.md) | 01 | 2.5h | pending |

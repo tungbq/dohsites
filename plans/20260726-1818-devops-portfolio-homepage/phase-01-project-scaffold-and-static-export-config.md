@@ -9,7 +9,7 @@
 ## Overview
 
 - **Priority:** P1 (blocks everything)
-- **Status:** pending
+- **Status:** done
 - **Effort:** ~2h
 - **Description:** Turn an empty directory into a buildable Next.js 15 App Router project that emits a static `out/` correctly prefixed for `tungbq.github.io/dohsites`, with Tailwind v4 wired and all runtime deps pre-installed so later parallel phases never touch `package.json`.
 
@@ -119,17 +119,17 @@ dohsites/
 
 ## Todo List
 
-- [ ] Node 22 installed in WSL; `.nvmrc` written
-- [ ] Next.js 15 scaffolded via temp dir; `plans/` + `.claude/` intact
-- [ ] Tailwind v4 (`@import "tailwindcss"`) rendering styles — visually confirmed
-- [ ] `@custom-variant dark` present in `globals.css`
-- [ ] `next.config.mjs` with export/basePath/assetPrefix/trailingSlash/unoptimized
-- [ ] `next-themes` + `fuse.js` installed
-- [ ] `package.json` scripts pre-written (incl. `build` with fetch prefix)
-- [ ] `public/.nojekyll` present
-- [ ] `.gitignore` covers `out/`, `node_modules/`, `.env*.local`
-- [ ] `npm run build:nofetch` green; `out/index.html` references `/dohsites/_next/`
-- [ ] git repo initialized on `main`, initial commit pushed
+- [x] Node 22 installed in WSL (via nvm, v22.23.1); `.nvmrc` written
+- [x] Next.js scaffolded via temp dir; `plans/` + `.claude/` intact (Next 16.2.12 — 15 unavailable at scaffold time, export/basePath behavior unchanged)
+- [x] Tailwind v4 (`@import "tailwindcss"`) rendering styles — confirmed via built CSS chunk containing `.underline`, `.text-3xl`, `.font-bold`; no browser available for a live visual check
+- [x] `@custom-variant dark` present in `globals.css`
+- [x] `next.config.ts` with export/basePath/assetPrefix/trailingSlash/unoptimized (kept scaffold's `.ts` config instead of `.mjs`)
+- [x] `next-themes` + `fuse.js` installed
+- [x] `package.json` scripts pre-written (incl. `build` with fetch prefix); `lint` kept as scaffold's `eslint` (not `next lint`, deprecated in this Next version)
+- [x] `public/.nojekyll` present
+- [x] `.gitignore` covers `out/`, `node_modules/`, `.env*.local`
+- [x] `npm run build:nofetch` green; `out/index.html` references `/dohsites/_next/`
+- [x] git repo initialized on `main`, initial commit made — **not pushed** (no remote created yet, needs user go-ahead)
 
 ## Success Criteria
 
