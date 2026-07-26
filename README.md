@@ -1,6 +1,12 @@
 # dohsites
 
-DevOps portfolio homepage for [tungbq](https://github.com/tungbq), built with Next.js and deployed as a static export to GitHub Pages at `tungbq.github.io/dohsites`.
+[![Deploy to GitHub Pages](https://github.com/tungbq/dohsites/actions/workflows/deploy.yml/badge.svg)](https://github.com/tungbq/dohsites/actions/workflows/deploy.yml)
+
+DevOps portfolio homepage for [tungbq](https://github.com/tungbq), built with Next.js and deployed as a static export to GitHub Pages.
+
+**Live:** https://tungbq.github.io/dohsites/
+
+> Repo Settings → Pages → Source must be set to **GitHub Actions** (not "Deploy from a branch") for the workflow below to publish anything.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
