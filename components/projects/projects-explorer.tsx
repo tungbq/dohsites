@@ -52,7 +52,7 @@ export function ProjectsExplorer({
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search projects by name, tag, or description…"
-            className="w-full rounded-md border border-border bg-surface px-4 py-2 text-sm text-foreground placeholder:text-muted focus:border-accent focus:outline-none"
+            className="w-full rounded-md border border-border bg-surface px-4 py-2 text-sm text-foreground placeholder:text-muted focus:border-accent"
           />
         </div>
 
