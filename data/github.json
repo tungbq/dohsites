@@ -1,0 +1,284 @@
+{
+  "generatedAt": "2026-07-26",
+  "profile": {
+    "login": "tungbq",
+    "name": "Tung Leo",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/85242618?v=4",
+    "followers": 270,
+    "publicRepos": 248,
+    "totalStars": 2346
+  },
+  "repos": {
+    "AWSHub": {
+      "name": "AWSHub",
+      "description": "📚 Collection of AWS Services documentation and learning resources ☁️",
+      "stars": 86,
+      "forks": 19,
+      "language": "Shell",
+      "topics": [
+        "aws",
+        "aws-saa",
+        "certification",
+        "cloud",
+        "cloud-computing",
+        "devops",
+        "documentation",
+        "learning"
+      ],
+      "htmlUrl": "https://github.com/tungbq/AWSHub",
+      "pushedAt": "2024-07-13T05:22:56Z",
+      "archived": false
+    },
+    "Azure-DevOps-Pipeline": {
+      "name": "Azure-DevOps-Pipeline",
+      "description": "Azure-DevOps tutorials",
+      "stars": 2,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "htmlUrl": "https://github.com/tungbq/Azure-DevOps-Pipeline",
+      "pushedAt": "2024-03-02T15:34:54Z",
+      "archived": false
+    },
+    "K8sHub": {
+      "name": "K8sHub",
+      "description": "Kubernetes deployment samples, practices, and examples",
+      "stars": 13,
+      "forks": 5,
+      "language": "Shell",
+      "topics": [],
+      "htmlUrl": "https://github.com/tungbq/K8sHub",
+      "pushedAt": "2024-07-30T16:34:56Z",
+      "archived": false
+    },
+    "awesome-workflow": {
+      "name": "awesome-workflow",
+      "description": ":octocat: Awesome lists about GitHub workflows to automate your development workflow",
+      "stars": 23,
+      "forks": 1,
+      "language": null,
+      "topics": [
+        "action",
+        "awesome",
+        "ci-cd",
+        "github",
+        "github-action",
+        "workflow"
+      ],
+      "htmlUrl": "https://github.com/tungbq/awesome-workflow",
+      "pushedAt": "2024-06-08T09:35:25Z",
+      "archived": false
+    },
+    "aws-lab-with-terraform": {
+      "name": "aws-lab-with-terraform",
+      "description": "Collection of Terraform code for AWS labs",
+      "stars": 15,
+      "forks": 16,
+      "language": "HCL",
+      "topics": [
+        "aws",
+        "deploy",
+        "deployment",
+        "devops",
+        "iac",
+        "iac-terraform",
+        "terraform"
+      ],
+      "htmlUrl": "https://github.com/tungbq/aws-lab-with-terraform",
+      "pushedAt": "2026-03-05T04:15:48Z",
+      "archived": false
+    },
+    "cmd": {
+      "name": "cmd",
+      "description": "A bookmark of essential commands for a software engineer's daily tasks :bookmark:",
+      "stars": 30,
+      "forks": 2,
+      "language": null,
+      "topics": [
+        "bookmark",
+        "cheatsheet",
+        "cli",
+        "cmd",
+        "command-line",
+        "commands",
+        "note"
+      ],
+      "htmlUrl": "https://github.com/tungbq/cmd",
+      "pushedAt": "2026-01-03T09:50:30Z",
+      "archived": false
+    },
+    "devops-basics": {
+      "name": "devops-basics",
+      "description": "🚀 Practical and document place for DevOps toolchain",
+      "stars": 1868,
+      "forks": 213,
+      "language": "HCL",
+      "topics": [
+        "ansible",
+        "aws",
+        "cd",
+        "ci",
+        "ci-cd",
+        "cloud",
+        "devops",
+        "devops-basic",
+        "devops-project",
+        "devops-tool",
+        "devops-tools",
+        "docker",
+        "elk",
+        "helm",
+        "iac",
+        "jenkins",
+        "k8s",
+        "monitoring",
+        "python",
+        "terraform"
+      ],
+      "htmlUrl": "https://github.com/tungbq/devops-basics",
+      "pushedAt": "2026-07-25T10:35:45Z",
+      "archived": false
+    },
+    "devops-dockerfiles": {
+      "name": "devops-dockerfiles",
+      "description": "Dockerfiles collection for DevOps tools",
+      "stars": 3,
+      "forks": 1,
+      "language": "Dockerfile",
+      "topics": [
+        "container",
+        "containers",
+        "devops",
+        "docker",
+        "dockerfile",
+        "dockerfiles"
+      ],
+      "htmlUrl": "https://github.com/tungbq/devops-dockerfiles",
+      "pushedAt": "2024-08-26T02:53:43Z",
+      "archived": false
+    },
+    "devops-practice": {
+      "name": "devops-practice",
+      "description": "A place to learn and practice DevOps in a hands-on way 🎮",
+      "stars": 31,
+      "forks": 11,
+      "language": "HCL",
+      "topics": [
+        "cicd",
+        "devops",
+        "devops-practice",
+        "devops-project",
+        "devops-tools",
+        "learning-by-doing",
+        "pracitce"
+      ],
+      "htmlUrl": "https://github.com/tungbq/devops-practice",
+      "pushedAt": "2024-09-17T06:38:25Z",
+      "archived": false
+    },
+    "devops-project": {
+      "name": "devops-project",
+      "description": "Collection of DevOps projects to level up your DevOps skills",
+      "stars": 100,
+      "forks": 47,
+      "language": "HCL",
+      "topics": [
+        "aws",
+        "azure",
+        "cicd",
+        "cloud",
+        "devops",
+        "devops-practice",
+        "devops-project",
+        "devops-tools",
+        "docker",
+        "k8s",
+        "terraform"
+      ],
+      "htmlUrl": "https://github.com/tungbq/devops-project",
+      "pushedAt": "2026-07-25T12:31:42Z",
+      "archived": false
+    },
+    "devops-toolkit": {
+      "name": "devops-toolkit",
+      "description": "🐳 Security-first container image for an all-in-one DevOps environment with popular tools like Ansible, Terraform, kubectl, Helm, AWS CLI, Azure CLI, Git, Python, and more. Pull it and work on your tasks.",
+      "stars": 60,
+      "forks": 19,
+      "language": "Python",
+      "topics": [
+        "ansible",
+        "awscli",
+        "container",
+        "devops",
+        "devops-toolkit",
+        "devops-tools",
+        "docker",
+        "dockerfile",
+        "dockerhub",
+        "git",
+        "helm",
+        "image",
+        "kubectl",
+        "python",
+        "terraform"
+      ],
+      "htmlUrl": "https://github.com/tungbq/devops-toolkit",
+      "pushedAt": "2026-07-25T13:05:08Z",
+      "archived": false
+    },
+    "find-github-issue": {
+      "name": "find-github-issue",
+      "description": ":octocat: Collection of GitHub filters for open-source contributors",
+      "stars": 8,
+      "forks": 5,
+      "language": null,
+      "topics": [
+        "contribution-guidelines",
+        "github",
+        "open-source"
+      ],
+      "htmlUrl": "https://github.com/tungbq/find-github-issue",
+      "pushedAt": "2024-10-19T04:17:11Z",
+      "archived": false
+    },
+    "repos": {
+      "name": "repos",
+      "description": "🚀 My repositories landscape",
+      "stars": 51,
+      "forks": 4,
+      "language": "Shell",
+      "topics": [
+        "devops",
+        "git",
+        "github",
+        "github-actions",
+        "repository"
+      ],
+      "htmlUrl": "https://github.com/tungbq/repos",
+      "pushedAt": "2024-08-15T16:55:58Z",
+      "archived": false
+    },
+    "terraform-sample-project": {
+      "name": "terraform-sample-project",
+      "description": "Sample Terraform project with best practice",
+      "stars": 2,
+      "forks": 1,
+      "language": "HCL",
+      "topics": [],
+      "htmlUrl": "https://github.com/tungbq/terraform-sample-project",
+      "pushedAt": "2023-12-09T04:03:34Z",
+      "archived": false
+    },
+    "useful-tools": {
+      "name": "useful-tools",
+      "description": "Collection of my favorite tools",
+      "stars": 7,
+      "forks": 0,
+      "language": null,
+      "topics": [],
+      "htmlUrl": "https://github.com/tungbq/useful-tools",
+      "pushedAt": "2025-08-09T09:56:27Z",
+      "archived": false
+    }
+  }
+}
