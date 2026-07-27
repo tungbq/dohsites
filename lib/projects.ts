@@ -28,6 +28,20 @@ export function getProfileStats() {
   return githubData.profile;
 }
 
+// Headline numbers for the curated collection that TheDevOpsHub organizes.
+// Derived from the same build-time data as everything else rather than
+// hardcoded, so the daily refresh keeps them honest instead of letting them
+// silently drift. These describe the projects tracked on this site, which is
+// a different curation than the hub site's own published totals.
+export function getCollectionStats() {
+  const topics = new Set(allProjects.flatMap((p) => p.stats.topics));
+  return {
+    repos: allProjects.length,
+    stars: allProjects.reduce((sum, p) => sum + p.stats.stars, 0),
+    topics: topics.size,
+  };
+}
+
 export function getCategories(): ProjectCategory[] {
   return Array.from(new Set(allProjects.map((p) => p.category)));
 }
