@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { MobileNav } from "@/components/layout/mobile-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/site-config";
 
 const NAV_LINKS = [
-  { href: "#projects", label: "Projects" },
-  { href: "#stack", label: "Stack" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
   { href: "#devops-hub", label: "DevOps Hub" },
+  { href: "#stack", label: "Stack" },
+  { href: "#projects", label: "Projects" },
 ];
 
 export function SiteHeader() {
@@ -17,7 +18,7 @@ export function SiteHeader() {
         <Link href="/" className="font-semibold text-foreground">
           {siteConfig.name}
         </Link>
-        <nav aria-label="Main" className="flex items-center gap-6">
+        <nav aria-label="Main" className="hidden items-center gap-6 sm:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
@@ -30,6 +31,11 @@ export function SiteHeader() {
           ))}
           <ThemeToggle />
         </nav>
+
+        <div className="flex items-center gap-2 sm:hidden">
+          <ThemeToggle />
+          <MobileNav links={NAV_LINKS} />
+        </div>
       </div>
     </header>
   );

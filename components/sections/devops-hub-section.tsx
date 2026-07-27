@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { devopsHub } from "@/content/devops-hub";
 import { siteConfig } from "@/lib/site-config";
 
@@ -15,14 +14,6 @@ export function DevopsHubSection() {
       <p className="mt-2 text-sm text-muted">{devopsHub.tagline}</p>
       <p className="mt-4 max-w-2xl text-muted">{devopsHub.description}</p>
       <p className="mt-3 max-w-2xl text-muted">{devopsHub.role}</p>
-
-      <ul className="mt-4 flex flex-wrap gap-2">
-        {devopsHub.topics.map((topic) => (
-          <li key={topic}>
-            <Badge>{topic}</Badge>
-          </li>
-        ))}
-      </ul>
 
       <a
         href={siteConfig.socials.website}

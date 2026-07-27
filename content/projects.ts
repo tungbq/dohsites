@@ -13,7 +13,7 @@ export const projects: CuratedProject[] = [
     impact: "1.8k+ stars, the most-referenced entry point into the collection",
     featured: true,
     order: 1,
-    tags: ["ci-cd", "docker", "terraform", "kubernetes", "monitoring"],
+    tags: ["cicd", "docker", "terraform", "kubernetes", "monitoring"],
   },
   {
     repo: "AWSHub",
@@ -105,7 +105,7 @@ export const projects: CuratedProject[] = [
     category: "Tools",
     featured: false,
     order: 10,
-    tags: ["github-actions", "ci-cd", "automation"],
+    tags: ["github-actions", "cicd", "automation"],
   },
   {
     repo: "find-github-issue",
@@ -155,7 +155,7 @@ export const projects: CuratedProject[] = [
     category: "Labs",
     featured: false,
     order: 15,
-    tags: ["azure", "cicd"],
+    tags: ["azure", "cicd", "azure-pipelines"],
   },
   {
     repo: "LocalEnv",
