@@ -5,20 +5,24 @@ import Fuse from "fuse.js";
 import { filterProjects } from "@/lib/filter-projects";
 import { ProjectCard } from "@/components/projects/project-card";
 import { FilterButtonGroup } from "@/components/projects/filter-button-group";
+import { TagCloud } from "@/components/projects/tag-cloud";
 import type { Project } from "@/types/github";
 
 export function ProjectsExplorer({
   projects,
   categories,
   languages,
+  topics,
 }: {
   projects: Project[];
   categories: string[];
   languages: string[];
+  topics: string[];
 }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All");
   const [language, setLanguage] = useState("All");
+  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
 
   const fuse = useMemo(
     () =>
@@ -29,14 +33,29 @@ export function ProjectsExplorer({
     [projects]
   );
 
-  const filtered = filterProjects({ projects, query, category, language, fuse });
+  const filtered = filterProjects({
+    projects,
+    query,
+    category,
+    language,
+    topics: selectedTopics,
+    fuse,
+  });
 
-  const hasActiveFilter = query !== "" || category !== "All" || language !== "All";
+  const hasActiveFilter =
+    query !== "" || category !== "All" || language !== "All" || selectedTopics.length > 0;
+
+  function toggleTopic(topic: string) {
+    setSelectedTopics((current) =>
+      current.includes(topic) ? current.filter((t) => t !== topic) : [...current, topic]
+    );
+  }
 
   function clearAll() {
     setQuery("");
     setCategory("All");
     setLanguage("All");
+    setSelectedTopics([]);
   }
 
   return (
@@ -67,6 +86,12 @@ export function ProjectsExplorer({
           options={languages}
           active={language}
           onChange={setLanguage}
+        />
+        <TagCloud
+          legend="Filter by topic"
+          options={topics}
+          active={selectedTopics}
+          onToggle={toggleTopic}
         />
 
         <div className="flex items-center justify-between text-sm text-muted">

@@ -157,4 +157,24 @@ export const projects: CuratedProject[] = [
     order: 15,
     tags: ["azure", "cicd"],
   },
+  {
+    repo: "LocalEnv",
+    title: "LocalEnv",
+    blurb:
+      "A containerized local development environment supporting multiple languages (Python, Go, JavaScript), so switching project stacks doesn't mean reinstalling toolchains on the host machine.",
+    category: "Toolkit",
+    featured: false,
+    order: 16,
+    tags: ["docker", "container", "development", "tooling"],
+  },
+  {
+    repo: "aws-codepipeline-demo",
+    title: "AWS CodePipeline Demo",
+    blurb:
+      "Demo Terraform code for an AWS CodePipeline setup, kept as a reference for wiring pipeline stages without re-deriving the Terraform resource graph each time.",
+    category: "Labs",
+    featured: false,
+    order: 17,
+    tags: ["aws", "terraform", "cicd", "codepipeline"],
+  },
 ];

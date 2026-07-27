@@ -41,3 +41,7 @@ export function getLanguages(): string[] {
     )
   ).sort();
 }
+
+export function getTopics(): string[] {
+  return Array.from(new Set(allProjects.flatMap((p) => p.stats.topics))).sort();
+}

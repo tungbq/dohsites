@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-07-27",
   "profile": {
     "login": "tungbq",
     "name": "Tung Leo",
     "avatarUrl": "https://avatars.githubusercontent.com/u/85242618?v=4",
     "followers": 270,
     "publicRepos": 248,
-    "totalStars": 2346
+    "totalStars": 2347
   },
   "repos": {
     "AWSHub": {
@@ -51,6 +51,28 @@
       "pushedAt": "2024-07-30T16:34:56Z",
       "archived": false
     },
+    "LocalEnv": {
+      "name": "LocalEnv",
+      "description": "🐳 LocalEnv - Local Containerized Environment supports various languages.",
+      "stars": 3,
+      "forks": 2,
+      "language": "Shell",
+      "topics": [
+        "container",
+        "development",
+        "docker",
+        "environment",
+        "golang",
+        "goovy",
+        "javascript",
+        "local",
+        "python",
+        "tooling"
+      ],
+      "htmlUrl": "https://github.com/tungbq/LocalEnv",
+      "pushedAt": "2024-05-22T23:50:11Z",
+      "archived": false
+    },
     "awesome-workflow": {
       "name": "awesome-workflow",
       "description": ":octocat: Awesome lists about GitHub workflows to automate your development workflow",
@@ -67,6 +89,17 @@
       ],
       "htmlUrl": "https://github.com/tungbq/awesome-workflow",
       "pushedAt": "2024-06-08T09:35:25Z",
+      "archived": false
+    },
+    "aws-codepipeline-demo": {
+      "name": "aws-codepipeline-demo",
+      "description": "Demo code for AWS code pipeline with Terraform",
+      "stars": 1,
+      "forks": 0,
+      "language": "HTML",
+      "topics": [],
+      "htmlUrl": "https://github.com/tungbq/aws-codepipeline-demo",
+      "pushedAt": "2023-12-12T15:22:29Z",
       "archived": false
     },
     "aws-lab-with-terraform": {

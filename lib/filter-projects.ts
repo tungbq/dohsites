@@ -6,6 +6,7 @@ export interface FilterProjectsArgs {
   query: string;
   category: string;
   language: string;
+  topics: string[];
   fuse: Fuse<Project>;
 }
 
@@ -14,6 +15,7 @@ export function filterProjects({
   query,
   category,
   language,
+  topics,
   fuse,
 }: FilterProjectsArgs): Project[] {
   const searched = query.trim()
@@ -24,5 +26,10 @@ export function filterProjects({
     .filter((project) => category === "All" || project.category === category)
     .filter(
       (project) => language === "All" || project.stats.language === language
+    )
+    .filter(
+      (project) =>
+        topics.length === 0 ||
+        project.stats.topics.some((topic) => topics.includes(topic))
     );
 }
