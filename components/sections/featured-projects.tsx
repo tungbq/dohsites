@@ -1,5 +1,6 @@
 import { ProjectCard } from "@/components/projects/project-card";
 import { RevealOnScroll } from "@/components/ui/reveal-on-scroll";
+import { sections } from "@/content/sections";
 import type { Project } from "@/types/github";
 
 const STAGGER_STEP_MS = 80;
@@ -10,8 +11,9 @@ export function FeaturedProjects({ projects }: { projects: Project[] }) {
   return (
     <section aria-labelledby="featured-heading" className="mx-auto max-w-5xl px-6 pt-12 pb-4">
       <h2 id="featured-heading" className="text-2xl font-semibold text-foreground">
-        Featured
+        {sections.featured.heading}
       </h2>
+      <p className="mt-2 max-w-2xl text-muted">{sections.featured.intro}</p>
       <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <RevealOnScroll key={project.repo} delayMs={index * STAGGER_STEP_MS}>

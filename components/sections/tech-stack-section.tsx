@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { sections } from "@/content/sections";
 import { techStack } from "@/content/tech-stack";
 import { getAllProjects } from "@/lib/projects";
 
@@ -13,8 +14,9 @@ export function TechStackSection() {
   return (
     <section id="stack" aria-labelledby="stack-heading" className="mx-auto max-w-5xl px-6 py-12">
       <h2 id="stack-heading" className="text-2xl font-semibold text-foreground">
-        Tech Stack
+        {sections.stack.heading}
       </h2>
+      <p className="mt-2 max-w-2xl text-muted">{sections.stack.intro}</p>
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {techStack.map((group) => (
           <div key={group.label}>
