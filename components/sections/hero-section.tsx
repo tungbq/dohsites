@@ -19,7 +19,7 @@ export function HeroSection({ stats }: { stats: ProfileStats }) {
         <div>
           <h1 className="text-4xl font-bold text-foreground">{siteConfig.author}</h1>
           <p className="mt-1 text-lg text-accent">DevOps Engineer</p>
-          <p className="mt-3 max-w-xl text-muted">{siteConfig.description}</p>
+          <p className="mt-3 max-w-xl text-muted">{siteConfig.tagline}</p>
         </div>
 
         <div className="flex gap-3">

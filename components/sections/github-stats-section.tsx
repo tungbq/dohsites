@@ -1,3 +1,4 @@
+import { sections } from "@/content/sections";
 import type { Project } from "@/types/github";
 
 function topLanguages(projects: Project[], limit = 5) {
@@ -22,8 +23,9 @@ export function GithubStatsSection({ projects }: { projects: Project[] }) {
       className="mx-auto max-w-5xl px-6 py-12"
     >
       <h2 id="github-stats-heading" className="text-2xl font-semibold text-foreground">
-        Top languages across curated projects
+        {sections.languages.heading}
       </h2>
+      <p className="mt-2 max-w-2xl text-muted">{sections.languages.intro}</p>
       <ul className="mt-6 flex max-w-xl flex-col gap-2">
         {languages.map(([language, count]) => (
           <li key={language} className="flex items-center gap-3">
