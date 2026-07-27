@@ -155,7 +155,7 @@ export const projects: CuratedProject[] = [
     category: "Labs",
     featured: false,
     order: 15,
-    tags: ["azure", "cicd"],
+    tags: ["azure", "cicd", "azure-pipelines"],
   },
   {
     repo: "LocalEnv",

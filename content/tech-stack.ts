@@ -38,7 +38,7 @@ export const techStack: TechStackGroup[] = [
     label: "CI/CD",
     items: [
       { name: "GitHub Actions", tagMatch: ["github-actions"] },
-      { name: "Azure DevOps Pipelines", tagMatch: ["azure", "cicd"] },
+      { name: "Azure DevOps Pipelines", tagMatch: ["azure-pipelines"] },
     ],
   },
   {
