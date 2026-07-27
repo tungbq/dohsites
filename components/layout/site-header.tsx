@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { href: "#projects", label: "Projects" },
   { href: "#stack", label: "Stack" },
   { href: "#about", label: "About" },
+  { href: "#contact", label: "Contact" },
   { href: "#devops-hub", label: "DevOps Hub" },
 ];
 
