@@ -2,11 +2,18 @@
 
 import { useMemo, useState } from "react";
 import Fuse from "fuse.js";
-import { filterProjects } from "@/lib/filter-projects";
+import { filterProjects, SORT_OPTIONS, type SortBy } from "@/lib/filter-projects";
 import { ProjectCard } from "@/components/projects/project-card";
 import { FilterButtonGroup } from "@/components/projects/filter-button-group";
 import { TagCloud } from "@/components/projects/tag-cloud";
 import type { Project } from "@/types/github";
+
+const SORT_LABEL: Record<SortBy, string> = {
+  default: "Default",
+  updated: "Recently updated",
+  stars: "Most stars",
+  name: "Name (A–Z)",
+};
 
 export function ProjectsExplorer({
   projects,
@@ -23,6 +30,7 @@ export function ProjectsExplorer({
   const [category, setCategory] = useState("All");
   const [language, setLanguage] = useState("All");
   const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
+  const [sortBy, setSortBy] = useState<SortBy>("default");
 
   const fuse = useMemo(
     () =>
@@ -39,6 +47,7 @@ export function ProjectsExplorer({
     category,
     language,
     topics: selectedTopics,
+    sortBy,
     fuse,
   });
 
@@ -94,19 +103,36 @@ export function ProjectsExplorer({
           onToggle={toggleTopic}
         />
 
-        <div className="flex items-center justify-between text-sm text-muted">
+        <div className="flex flex-wrap items-center justify-between gap-3 text-sm text-muted">
           <p aria-live="polite">
             {filtered.length} project{filtered.length === 1 ? "" : "s"}
           </p>
-          {hasActiveFilter ? (
-            <button
-              type="button"
-              onClick={clearAll}
-              className="text-accent hover:underline"
+          <div className="flex items-center gap-3">
+            <label htmlFor="project-sort" className="sr-only">
+              Sort projects
+            </label>
+            <select
+              id="project-sort"
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value as SortBy)}
+              className="rounded-md border border-border bg-surface px-2 py-1 text-sm text-foreground"
             >
-              Clear all
-            </button>
-          ) : null}
+              {SORT_OPTIONS.map((option) => (
+                <option key={option} value={option}>
+                  Sort: {SORT_LABEL[option]}
+                </option>
+              ))}
+            </select>
+            {hasActiveFilter ? (
+              <button
+                type="button"
+                onClick={clearAll}
+                className="text-accent hover:underline"
+              >
+                Clear all
+              </button>
+            ) : null}
+          </div>
         </div>
       </div>
 
