@@ -3,11 +3,11 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { siteConfig } from "@/lib/site-config";
 
 const NAV_LINKS = [
-  { href: "#projects", label: "Projects" },
-  { href: "#stack", label: "Stack" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
   { href: "#devops-hub", label: "DevOps Hub" },
+  { href: "#stack", label: "Stack" },
+  { href: "#projects", label: "Projects" },
 ];
 
 export function SiteHeader() {

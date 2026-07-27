@@ -12,6 +12,10 @@ export function PersonJsonLd() {
     description: siteConfig.description,
     jobTitle: "DevOps Engineer",
     email: siteConfig.email,
+    address: {
+      "@type": "PostalAddress",
+      ...siteConfig.location,
+    },
     sameAs: [
       siteConfig.socials.github,
       siteConfig.socials.linkedin,
