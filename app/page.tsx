@@ -5,6 +5,7 @@ import { TechStackSection } from "@/components/sections/tech-stack-section";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { GithubStatsSection } from "@/components/sections/github-stats-section";
 import { ProjectsExplorer } from "@/components/projects/projects-explorer";
+import { RevealOnScroll } from "@/components/ui/reveal-on-scroll";
 import {
   getAllProjects,
   getCategories,
@@ -25,26 +26,36 @@ export default function Home() {
   return (
     <>
       <HeroSection stats={stats} />
-      <AboutSection />
-      <DevopsHubSection />
-      <TechStackSection />
+      <RevealOnScroll>
+        <AboutSection />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <DevopsHubSection />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <TechStackSection />
+      </RevealOnScroll>
       <FeaturedProjects projects={featuredProjects} />
 
-      <section id="projects" aria-labelledby="projects-heading" className="mx-auto max-w-5xl px-6 py-12">
-        <h2 id="projects-heading" className="text-2xl font-semibold text-foreground">
-          Projects
-        </h2>
-        <div className="mt-6">
-          <ProjectsExplorer
-            projects={allProjects}
-            categories={categories}
-            languages={languages}
-            topics={topics}
-          />
-        </div>
-      </section>
+      <RevealOnScroll>
+        <section id="projects" aria-labelledby="projects-heading" className="mx-auto max-w-5xl px-6 py-12">
+          <h2 id="projects-heading" className="text-2xl font-semibold text-foreground">
+            Projects
+          </h2>
+          <div className="mt-6">
+            <ProjectsExplorer
+              projects={allProjects}
+              categories={categories}
+              languages={languages}
+              topics={topics}
+            />
+          </div>
+        </section>
+      </RevealOnScroll>
 
-      <GithubStatsSection projects={allProjects} />
+      <RevealOnScroll>
+        <GithubStatsSection projects={allProjects} />
+      </RevealOnScroll>
     </>
   );
 }

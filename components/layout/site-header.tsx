@@ -21,9 +21,10 @@ export function SiteHeader() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted transition-colors hover:text-foreground"
+              className="group relative text-sm text-muted transition-colors hover:text-foreground"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-accent-2 transition-all duration-200 group-hover:w-full" />
             </a>
           ))}
           <ThemeToggle />

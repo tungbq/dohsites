@@ -2,13 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
+import { Sun, Moon, Monitor } from "lucide-react";
 
 const CYCLE = ["light", "dark", "system"] as const;
 
-const ICON: Record<(typeof CYCLE)[number], string> = {
-  light: "☀️",
-  dark: "🌙",
-  system: "🖥️",
+const ICON: Record<(typeof CYCLE)[number], typeof Sun> = {
+  light: Sun,
+  dark: Moon,
+  system: Monitor,
 };
 
 export function ThemeToggle() {
@@ -36,6 +37,7 @@ export function ThemeToggle() {
 
   const current = (theme as (typeof CYCLE)[number]) ?? "system";
   const next = CYCLE[(CYCLE.indexOf(current) + 1) % CYCLE.length];
+  const Icon = ICON[current];
 
   return (
     <button
@@ -44,9 +46,9 @@ export function ThemeToggle() {
       aria-label={`Theme: ${current}. Switch to ${next}`}
       aria-pressed={current === "dark"}
       title={`Theme: ${current} (click for ${next})`}
-      className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-foreground transition-colors hover:bg-surface"
+      className="flex h-9 w-9 items-center justify-center rounded-md border border-border text-foreground transition-all duration-200 hover:scale-105 hover:border-accent hover:text-accent"
     >
-      <span aria-hidden="true">{ICON[current]}</span>
+      <Icon aria-hidden="true" className="h-4 w-4" />
     </button>
   );
 }

@@ -27,7 +27,7 @@ export function DevopsHubSection() {
         href={siteConfig.socials.website}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 inline-block rounded-md border border-border px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+        className="mt-6 inline-block rounded-md border border-accent-2/40 px-4 py-2 text-sm font-medium text-accent-2 transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-2 hover:text-background hover:shadow-lg hover:shadow-accent-2/30"
       >
         Visit {devopsHub.title}
         <span className="sr-only"> (opens in new tab)</span>
