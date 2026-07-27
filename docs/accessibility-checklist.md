@@ -1,7 +1,7 @@
 # Accessibility manual checklist
 
 Automated tools (Lighthouse, axe) catch roughly a third of real accessibility
-issues. Run this by hand against https://tungbq.github.io/dohsites/ after any
+issues. Run this by hand against https://tungbq.github.io/me/ after any
 change to layout, theme, or the project grid.
 
 ## Keyboard only (unplug the mouse)

@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "tungbq | DevOps Engineer",
   description:
     "Portfolio of tungbq, a DevOps engineer working with Kubernetes, Terraform, and cloud infrastructure automation.",
-  url: "https://tungbq.github.io/dohsites",
+  url: "https://tungbq.github.io/me",
   author: "Tung Leo",
   keywords: [
     "DevOps",

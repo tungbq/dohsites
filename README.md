@@ -1,10 +1,10 @@
-# dohsites
+# me
 
-[![Deploy to GitHub Pages](https://github.com/tungbq/dohsites/actions/workflows/deploy.yml/badge.svg)](https://github.com/tungbq/dohsites/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/tungbq/me/actions/workflows/deploy.yml/badge.svg)](https://github.com/tungbq/me/actions/workflows/deploy.yml)
 
 DevOps portfolio homepage for [tungbq](https://github.com/tungbq), built with Next.js and deployed as a static export to GitHub Pages.
 
-**Live:** https://tungbq.github.io/dohsites/
+**Live:** https://tungbq.github.io/me/
 
 > Repo Settings → Pages → Source must be set to **GitHub Actions** (not "Deploy from a branch") for the workflow below to publish anything.
 
@@ -18,7 +18,7 @@ First, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000/dohsites](http://localhost:3000/dohsites) with your browser to see the result.
+Open [http://localhost:3000/me](http://localhost:3000/me) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
@@ -28,7 +28,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 No local Chrome and a zero-quota PageSpeed Insights API meant a real Lighthouse
 score couldn't be captured this pass — numbers below are placeholders, not
-measurements. Re-run `npx lighthouse https://tungbq.github.io/dohsites/ --view`
+measurements. Re-run `npx lighthouse https://tungbq.github.io/me/ --view`
 or https://pagespeed.web.dev/ once a scoring tool is available, and replace
 this table.
 
