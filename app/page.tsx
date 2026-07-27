@@ -7,6 +7,7 @@ import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { GithubStatsSection } from "@/components/sections/github-stats-section";
 import { ProjectsExplorer } from "@/components/projects/projects-explorer";
 import { RevealOnScroll } from "@/components/ui/reveal-on-scroll";
+import { sections } from "@/content/sections";
 import {
   getAllProjects,
   getCategories,
@@ -44,8 +45,9 @@ export default function Home() {
       <RevealOnScroll>
         <section id="projects" aria-labelledby="projects-heading" className="mx-auto max-w-5xl px-6 pt-4 pb-12">
           <h2 id="projects-heading" className="text-2xl font-semibold text-foreground">
-            Projects
+            {sections.projects.heading}
           </h2>
+          <p className="mt-2 max-w-2xl text-muted">{sections.projects.intro}</p>
           <div className="mt-6">
             <ProjectsExplorer
               projects={allProjects}
