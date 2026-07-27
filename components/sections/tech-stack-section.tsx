@@ -1,5 +1,13 @@
 import { Badge } from "@/components/ui/badge";
 import { techStack } from "@/content/tech-stack";
+import { getAllProjects } from "@/lib/projects";
+
+function countProjects(tagMatch: string[]): number {
+  if (tagMatch.length === 0) return 0;
+  return getAllProjects().filter((project) =>
+    tagMatch.every((tag) => project.tags.includes(tag))
+  ).length;
+}
 
 export function TechStackSection() {
   return (
@@ -12,11 +20,19 @@ export function TechStackSection() {
           <div key={group.label}>
             <h3 className="text-sm font-medium text-muted">{group.label}</h3>
             <ul className="mt-2 flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li key={item}>
-                  <Badge>{item}</Badge>
-                </li>
-              ))}
+              {group.items.map((item) => {
+                const count = countProjects(item.tagMatch);
+                return (
+                  <li key={item.name}>
+                    <Badge>
+                      {item.name}
+                      {count > 0 ? (
+                        <span className="text-muted"> · {count} project{count === 1 ? "" : "s"}</span>
+                      ) : null}
+                    </Badge>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         ))}
