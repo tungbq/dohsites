@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
+import { DevopsHubSection } from "@/components/sections/devops-hub-section";
 import { TechStackSection } from "@/components/sections/tech-stack-section";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { GithubStatsSection } from "@/components/sections/github-stats-section";
@@ -10,6 +11,7 @@ import {
   getFeaturedProjects,
   getLanguages,
   getProfileStats,
+  getTopics,
 } from "@/lib/projects";
 
 export default function Home() {
@@ -18,11 +20,13 @@ export default function Home() {
   const featuredProjects = getFeaturedProjects();
   const categories = getCategories();
   const languages = getLanguages();
+  const topics = getTopics();
 
   return (
     <>
       <HeroSection stats={stats} />
       <AboutSection />
+      <DevopsHubSection />
       <TechStackSection />
       <FeaturedProjects projects={featuredProjects} />
 
@@ -35,6 +39,7 @@ export default function Home() {
             projects={allProjects}
             categories={categories}
             languages={languages}
+            topics={topics}
           />
         </div>
       </section>

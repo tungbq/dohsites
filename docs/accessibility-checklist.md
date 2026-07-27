@@ -9,9 +9,9 @@ change to layout, theme, or the project grid.
 1. `Tab` from a blank address bar. First stop should be the skip-link
    ("Skip to main content"), hidden until focused.
 2. `Enter` on the skip-link jumps to `#main`, past the header nav.
-3. Continue `Tab`ing: nav links (About, Stack, Projects) → theme toggle →
+3. Continue `Tab`ing: nav links (Projects, Stack, About, DevOps Hub) → theme toggle →
    search input → each category filter button → each language filter
-   button → each project card's title link (in visual/DOM order, top-left
+   button → each topic tag button → each project card's title link (in visual/DOM order, top-left
    to bottom-right) → footer social links.
 4. Every stop must show a visible ring (2px accent-colored outline). No
    stop should be invisible or trapped (can't `Tab` out).
