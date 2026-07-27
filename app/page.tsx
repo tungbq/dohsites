@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
+import { ContactSection } from "@/components/sections/contact-section";
 import { DevopsHubSection } from "@/components/sections/devops-hub-section";
 import { TechStackSection } from "@/components/sections/tech-stack-section";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
@@ -30,6 +31,9 @@ export default function Home() {
         <AboutSection />
       </RevealOnScroll>
       <RevealOnScroll>
+        <ContactSection />
+      </RevealOnScroll>
+      <RevealOnScroll>
         <DevopsHubSection />
       </RevealOnScroll>
       <RevealOnScroll>
@@ -38,7 +42,7 @@ export default function Home() {
       <FeaturedProjects projects={featuredProjects} />
 
       <RevealOnScroll>
-        <section id="projects" aria-labelledby="projects-heading" className="mx-auto max-w-5xl px-6 py-12">
+        <section id="projects" aria-labelledby="projects-heading" className="mx-auto max-w-5xl px-6 pt-4 pb-12">
           <h2 id="projects-heading" className="text-2xl font-semibold text-foreground">
             Projects
           </h2>
