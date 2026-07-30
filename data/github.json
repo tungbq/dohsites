@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-29",
+  "generatedAt": "2026-07-30",
   "profile": {
     "login": "tungbq",
     "name": "Tung Leo",
     "avatarUrl": "https://avatars.githubusercontent.com/u/85242618?v=4",
     "followers": 269,
     "publicRepos": 248,
-    "totalStars": 2348
+    "totalStars": 2347
   },
   "repos": {
     "AWSHub": {
       "name": "AWSHub",
       "description": "📚 Collection of AWS Services documentation and learning resources ☁️",
       "stars": 86,
-      "forks": 19,
+      "forks": 20,
       "language": "Shell",
       "topics": [
         "aws",
@@ -143,7 +143,7 @@
     "devops-basics": {
       "name": "devops-basics",
       "description": "🚀 Practical and document place for DevOps toolchain",
-      "stars": 1869,
+      "stars": 1868,
       "forks": 213,
       "language": "HCL",
       "topics": [
@@ -169,7 +169,7 @@
         "terraform"
       ],
       "htmlUrl": "https://github.com/tungbq/devops-basics",
-      "pushedAt": "2026-07-27T10:20:00Z",
+      "pushedAt": "2026-07-29T13:21:58Z",
       "archived": false
     },
     "devops-dockerfiles": {
